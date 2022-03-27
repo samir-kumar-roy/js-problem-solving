@@ -1,0 +1,113 @@
+#1 Problem: Solve the problem with Javascript  to find the maximum between two numbers.
+Solution: 
+var numFirst = 40;
+var numSecond = 50;
+if (numFirst > numSecond) {
+    console.log('First number is greater.');
+}
+else {
+    console.log('Second number is greater.');
+}
+.........................................................................................................................................................................................................
+#2 Problem: Solve the problem with Javascript  to find a maximum between three numbers.
+Solution:
+var numFirst = 2;
+var numSecond = 7;
+var numThird = 3;
+if (numFirst > numSecond) {
+    if (numFirst > numThird) {
+        console.log('First number is the greatest');
+    } else {
+        console.log('Third number is the greatest');
+    }
+} else {
+    if (numSecond > numThird) {
+        console.log('Second number is the greatest');
+    } else {
+        console.log('Third number is the greatest');
+    }
+}
+...................................................................................................................................................................
+#3 Problem: Solve the problem with Javascript  to check whether a number is negative, positive or zero.
+Solution:
+var givenNumber = 0;
+if (givenNumber > 0) {
+    console.log("The given number is Positive");
+} else if (givenNumber < 0) {
+    console.log("The given number is Negative");
+} else {
+    console.log("The given number is Zero");
+}
+..........................................................................................................................................................................................................
+#4 Problem: Solve the problem with Javascript  to check whether a number is divisible by 40 or not.
+Solution: 
+var givenNumber = 130;
+if ((givenNumber % 40) == 0) {
+    console.log("The given number " + givenNumber + "is divisible by 40");
+}
+else {
+    console.log(givenNumber + " is not divisible by 40");
+}
+................................................................................................................................................................................................
+#5 Problem: Solve the problem with Javascript  to check whether a number is even or odd.
+Solution:
+var givenNumber = 129;
+if ((givenNumber % 2) == 0) {
+    console.log("The given number " + givenNumber + " is even");
+}
+else {
+    console.log(givenNumber + " is odd");
+}
+........................................................................................................................................................................................................
+#6 Problem: Solve the problem with Javascript  to check whether a character is in the alphabet or not.
+Solution:
+var character = "a"
+
+if ((character >= 'A' || character >= 'a') && (character <= 'Z' || character <= 'z')) {
+    console.log("This is in alphabet.");
+} else {
+    console.log("This is not in alphabet.");
+}
+........................................................................................................................................................................................................
+#7 Problem: Solve the problem with Javascript  to check weather the temperature is hot, cold or normal
+Solution:
+var temperature = 24;
+// suppose 20-30 is normal, above 30 is hot and below 20 is cold
+if (temperature > 30) {
+    console.log("It is Hot");
+} else if (temperature < 30 && temperature >= 20) {
+    console.log("It is normal");
+} else {
+    console.log("It is cold");
+}
+..........................................................................................................................................................................................................
+#8 Problem: Given 3 subjects Math, English and Physics find the total marks and average of 3 subjects.
+Find out if the average grade:
+If Percentage >= 90% then print “Grade A”
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+Solution:
+var marksInMath = 92;
+var marksInEnglish = 92;
+var marksInPhysics = 88;
+var totalMarks = marksInEnglish + marksInMath + marksInPhysics;
+console.log("Total Marks Obtained ", totalMarks);
+var average = totalMarks / 3;
+if (average >= 90) {
+    console.log("Your Grade  ", "A");
+} else if (average >= 80) {
+    console.log("Your Grade  ", "B");
+} else if (average >= 70) {
+    console.log("Your Grade  ", "C");
+} else if (average >= 60) {
+    console.log("Your Grade  ", "D");
+} else if (average >= 40) {
+    console.log("Your Grade  ", "E");
+} else {
+    console.log("Your Grade  ", "F");
+}
+
+.........................................................................................................................................................................................................
