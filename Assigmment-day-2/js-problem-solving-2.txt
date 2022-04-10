@@ -1,0 +1,182 @@
+#1 Write a JavaScript Function to calculate the multiplication and division of two numbers.
+Solution:
+
+function calculate(a, b) {
+    console.log("Multiplication", a * b);
+    if (a >= b) {
+
+        console.log("Multiplication", a / b);
+    } else {
+        console.log("Division", b / a);
+    }
+}
+calculate(1, 4);
+............................................................................................
+
+#2 Write a JavaScript program to convert temperatures from Celsius to Fahrenheit or Vice Versa (Fahrenheit to Celsius).
+Solution:
+
+function celsiusToFahrenheit(c) {
+    let f = (9 * c + (32 * 5)) / 5;
+    console.log(`${c} degree celsius = ${f} degree farenheit`);
+
+}
+celsiusToFahrenheit(30);
+function farenheitToCelsius(f) {
+    let c = (5 * (f - 32)) / 9;
+    console.log(f + " degree farenheit = " + c + "  degree celsius");
+}
+farenheitToCelsius(86);
+............................................................................................
+
+#3 Write a JavaScript function to check from two given integers, whether one is positive and another one is negative.
+Solution:  
+
+var intOne = 10;
+var intTwo = 1;
+if ((intOne > 0 && intTwo < 0) || (intOne < 0 && intTwo > 0)) {
+    console.log("one number is positive and another one is negative");
+} else {
+    console.log("both the numbers are of same polarity");
+}
+............................................................................................
+#4 Write a JavaScript function to check whether the number is positive or negative.
+Solution: 
+
+var num = 0;
+if (num < 0) {
+    console.log("the number is Negative");
+} else if (num > 0) {
+    console.log("the number is Positive");
+} else {
+    console.log("the number is Zero");
+}
+............................................................................................
+#5 Write a JavaScript program to remove a character at the specified position of a given string and return a new string
+Solution:
+
+var myString = "Samir";
+var removeCharPosition = 0;
+var strToArray = myString.split("");
+// console.log(strToArray);
+strToArray.splice(removeCharPosition, 1);
+// console.log(strToArray);
+strToArray = strToArray.join("");
+console.log("the new string is ", strToArray)
+............................................................................................
+#6 Write a JavaScript function to reverse a given string.
+Solution:
+
+var myString = "Hello Samir Kumar Roy";
+var newString = myString.split(" ");
+newString.reverse();
+// console.log(newString);
+newString = newString.join(" ");
+console.log(newString);
+............................................................................................
+#7 Create Three objects with at least 4 properties and 2 methods in them. 
+Solution:
+
+// First Object
+const person = {
+    fisrtName: "samir",
+    lastName: "Roy",
+    Age: 33,
+    profession: "Web Developer",
+    CompanyName: "None",
+    fullName: function () {
+        return `Fullname is ${this.firstName} ${this.lastName}`;
+    },
+    professionalInfo: function () {
+        console.log(`He is a ${this.profession} and he works at ${this.CompanyName} company`);
+    }
+}
+// Second Object
+const car = {
+    brand: "Marcedes",
+    model: "M0020",
+    price: 180000,
+    yearOfRelease: 2020,
+    start: function(){
+        console.log(`The car ${this.brand} ${this.model} starts on voice command`);
+    },
+    selfDriving: function(){
+        console.log(`The car ${this.brand} ${this.model} can drive itself for you`);
+    }
+}
+// Third Object
+const student = {
+    name: Kibria,
+    rollNo: 10,
+    grade: 9,
+    OlympiadQualified: true,
+    writing: function(){
+        rturn `${this.Kibria}'s handwriting is very neat and clean`;
+    },
+    playing: function(){
+        rturn `${this.Kibria}  loves to play cricket`;
+    }
+}
+...........................................................................................
+#8 swap the values between two variables
+Solution: 
+
+let varOne = 30;
+let varTwo = 5
+console.log("before swapping varOne ", varOne);
+console.log("before swapping varTwo ", varTwo);
+let temp = varOne + varTwo;
+varOne = temp - varOne;
+varTwo = temp - varTwo;
+console.log("After swapping ");
+console.log("varOne", varOne);
+console.log("varTwo", varTwo);
+............................................................................................
+#9 Find the largest of 3 numbers
+Solution : 
+
+var one = 10;
+var two = 60;
+var three = 500;
+if ((one > two) && (one > three)) {
+    console.log(`${one} is the greatest number`);
+}
+if ((two > one) && (two > three)) {
+    console.log(`${two} is the greatest number`);
+}
+if ((three > one) && (three > two)) {
+    console.log(`${three} is the greatest number`);
+}
+............................................................................................
+#10 sum of all numbers in an array
+Solution:
+
+const numbres = [30, 20, 104, 40, 59];
+var sum = 0;
+for (let i = 0; i < numbres.length; i++) {
+    sum += numbres[i];
+}
+console.log("Sum = ", sum);
+.............................................................................................
+#11 find the largest element in an array
+Solution:
+
+const numbres = [30, 20, 104, 40, 59];
+numbres.sort(function (a, b) {
+    return a - b;
+});
+// console.log(numbres);
+console.log("Largest number in the array = ", numbres[numbres.length - 1]);
+............................................................................................
+#12 remove duplicate item from an array
+Solution: 
+const character = ['a', 'b', 'c', 'a', 'd', 'b', 'a', 'c'];
+const newCharacter = [];
+character.forEach(function (elem) {
+    if ((newCharacter.includes(elem)) == false) {
+        newCharacter.push(elem);
+    }
+});
+console.log("the array after removing duplicates from it...");
+console.log(newCharacter);
+
